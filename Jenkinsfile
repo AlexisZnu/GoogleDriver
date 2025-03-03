@@ -2,10 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Tarea de limpiezas') {
+        stage('Checkout') {
             steps {
-                git 'https://github.com/AlexisZnu/GoogleDriver.git'
-                sh './gradlew clean'
+                git branch: 'main', url: 'https://github.com/AlexisZnu/GoogleDriver.git'
             }
         }
 
