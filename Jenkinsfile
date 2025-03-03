@@ -10,7 +10,7 @@ pipeline {
 
         stage('Tarea de compilacion') {
             steps {
-                sh './gradlew build'
+                bat './gradlew build'
             }
         }
     }
