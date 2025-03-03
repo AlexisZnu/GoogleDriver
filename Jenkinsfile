@@ -6,7 +6,7 @@ pipeline{
       }
 
     stages{
-        stage('Tarea de limpiezas) {
+       stage('Tarea de limpiezas') {
             steps{
                 git 'https://github.com/AlexisZnu/GoogleDriver.git'
                 sh 'gradle clean'
